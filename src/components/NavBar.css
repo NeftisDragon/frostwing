@@ -1,0 +1,42 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg); }
+    to {
+      transform: rotate(360deg); } 
+}
+.header-container {
+    display: grid;
+    grid-template-areas: "logo navigation";
+    align-items: center;
+    background-color: #fbf9f7;
+}
+.logo {
+    text-align: left;
+}
+.logo a img{
+    width: 100px;
+    margin: 0 30px;
+}
+.logo a img:hover {
+    animation: spin infinite 10s linear;
+}
+.navigation {
+    text-align: center;
+}
+.navigation ul {
+    padding: 0%;
+    list-style-type: none;
+    margin: 0 10px;
+}
+.navigation a {
+    text-decoration: none;
+    color: #000;
+}
+.navigation li {
+    display: inline;
+    margin: 0 20px;
+    font-size: 32px;
+}
+.navigation li:hover {
+    color: #61dafb;
+}

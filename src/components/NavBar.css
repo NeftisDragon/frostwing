@@ -6,16 +6,16 @@
 }
 .header-container {
     display: grid;
-    grid-template-areas: "logo navigation";
+    grid-template-areas: "logo navigation vectors";
     align-items: center;
     background-color: #fbf9f7;
 }
 .logo {
-    text-align: left;
+    text-align: center;
 }
 .logo a img{
-    width: 100px;
-    margin: 0 30px;
+    width: 95px;
+    margin: 0 0px;
 }
 .logo a img:hover {
     animation: spin infinite 10s linear;
@@ -39,4 +39,36 @@
 }
 .navigation li:hover {
     color: #61dafb;
+}
+.vectors {
+    display: flex;
+    justify-content: center;
+}
+.cart-container {
+    background-color: #61dafb;
+    width: max-content;
+    padding: 10px;
+    border-radius: 100%;
+}
+.cart-container:hover {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+.cart-vector {
+    width: 60px;
+    cursor: pointer;
+}
+.item-container {
+    background-color: #606060;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.item-container:hover {
+    transition: 0.5s;
+    padding: 15px 20px;
+}
+.item-container h1 {
+    font-family: 'Roboto';
+    font-size: 48px;
 }

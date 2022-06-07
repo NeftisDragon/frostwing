@@ -1,11 +1,15 @@
 import './NavBar.css';
+import ItemCount from './ItemCount';
 
-const Item = (props) => {
+const ItemListContainer = (props) => {
     return (
-        <section className="item-container">
-            <h1>{props.greet}</h1>
-        </section>
+        <>
+            <section className="item-container">
+                <h1>{props.greet}</h1>
+            </section>
+            <ItemCount stock={5} initial={0} onAdd={() => {}} />
+        </>
     )
 }
 
-export default Item;
+export default ItemListContainer;

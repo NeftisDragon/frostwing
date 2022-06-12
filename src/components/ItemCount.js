@@ -10,7 +10,7 @@ function ItemCount({stock, initial, onAdd}) {
     }
 
     const decreaseCounter = () => {
-        if (counter > 0){
+        if (counter > initial){
             setCounter(counter -1);
             setNewStock(newStock + 1);
         }

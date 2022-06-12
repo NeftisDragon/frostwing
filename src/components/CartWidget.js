@@ -1,5 +1,5 @@
+import './components.css';
 import Cart from '../assets/vectors/cart.svg';
-import './NavBar.css';
 
 function CartWidget() {
     return (

@@ -1,13 +1,25 @@
-import './NavBar.css';
-import ItemCount from './ItemCount';
+import './components.css';
+import ItemList from './ItemList.js';
+import customFetch from '../utils/customFetch';
+import products from '../utils/products.js';
+import {useEffect, useState} from 'react';
 
-const ItemListContainer = (props) => {
+function ItemListContainer(props) {
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        customFetch(2000, products)
+        .then(r => setItems(r))
+    }, [items])
+
     return (
         <>
-            <section className="item-container">
+            <section className="customMessage">
                 <h1>{props.greet}</h1>
             </section>
-            <ItemCount stock={5} initial={0} onAdd={() => {}} />
+            <section className="ItemListContainer">
+                <ItemList products={items} />
+            </section>
         </>
     )
 }

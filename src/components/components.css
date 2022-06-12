@@ -9,16 +9,20 @@
     grid-template-areas: "logo navigation vectors";
     align-items: center;
     background-color: #fbf9f7;
+    position: fixed;
+    width: 100%;
 }
-.logo {
+.logo-container {
     text-align: center;
 }
-.logo a img{
-    width: 95px;
-    margin: 0 0px;
+.logo {
+    width: 130px;
+    margin: 0;
 }
-.logo a img:hover {
-    animation: spin infinite 10s linear;
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: spin infinite 20s linear;
+    }
 }
 .navigation {
     text-align: center;
@@ -58,17 +62,29 @@
     width: 60px;
     cursor: pointer;
 }
-.item-container {
+.customMessage {
     background-color: #606060;
+    width: fit-content;
     padding: 10px;
     border-radius: 15px;
     transition: 0.5s;
 }
-.item-container:hover {
+.customMessage:hover {
     transition: 0.5s;
     padding: 15px 20px;
 }
-.item-container h1 {
+.customMessage h1 {
     font-family: 'Roboto';
     font-size: 48px;
+}
+.ItemListContainer {
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid;
+}
+.item {
+    display: inline-block;
+}
+.item-name {
+    font-size: 36px;
 }

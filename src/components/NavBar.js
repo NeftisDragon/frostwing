@@ -1,13 +1,13 @@
-import './NavBar.css';
-import Logo from '../assets/images/logo-placeholder-image.png';
+import './components.css';
+import logo from '../logo.svg';
 import CartWidget from './CartWidget';
 
 function NavBar() {
     return(
         <header>
             <div className="header-container">
-                <div className="logo">
-                    <a href="#"><img src={Logo} /></a>
+                <div className="logo-container">
+                    <a href="#"><img src={logo} className="logo" alt="logo" /></a>
                 </div>
                 <div className="navigation">
                     <nav>

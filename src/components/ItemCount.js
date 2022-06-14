@@ -5,8 +5,10 @@ function ItemCount({stock, initial, onAdd}) {
     const [newStock, setNewStock] = useState(stock);
 
     const increaseCounter = () => {
-        setCounter(counter + 1);
-        setNewStock(newStock - 1);
+        if(counter < stock) {
+            setCounter(counter + 1);
+            setNewStock(newStock - 1);
+        }
     }
 
     const decreaseCounter = () => {

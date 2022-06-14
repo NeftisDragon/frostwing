@@ -1,15 +1,24 @@
 import './components.css';
 import ItemList from './ItemList.js';
-import customFetch from '../utils/customFetch';
 import products from '../utils/products.js';
+import {getProducts} from '../utils/products.js';
 import {useEffect, useState} from 'react';
+
+function customError() {
+    throw Error("Failed to get resources.");
+}
 
 function ItemListContainer(props) {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        customFetch(2000, products)
-        .then(r => setItems(r))
+        getProducts(2000, products, customError)
+        .then(r => {
+            setItems(r);
+        })
+        .catch(error => {
+            customError(error);
+        })
     }, [items])
 
     return (

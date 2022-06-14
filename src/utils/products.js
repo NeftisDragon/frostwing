@@ -1,5 +1,3 @@
-import '../assets/images/not_found.png';
-
 const products = [
     {
         id: 0,
@@ -36,3 +34,21 @@ const products = [
 ]
 
 export default products;
+
+export const getProducts = (time, task, error) => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            res(task);
+            rej(error);
+        }, time)
+    })
+}
+
+export const getProduct = (time, task, error) => {
+    return new Promise((res, rej) => {
+        setTimeout(() => {
+            res(task);
+            rej(error);
+        }, time)
+    })
+}

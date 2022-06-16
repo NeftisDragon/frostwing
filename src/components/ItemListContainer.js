@@ -27,7 +27,7 @@ function ItemListContainer(props) {
                 <h1>{props.greet}</h1>
             </section>
             <section className="ItemListContainer">
-                {items?.length < 0 ? <p>Loading...</p> : <ItemList products={items} />}
+                {items?.length <= 0 ? <p>Loading...</p> : <ItemList products={items} />}
             </section>
         </>
     )

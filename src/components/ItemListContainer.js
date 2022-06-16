@@ -1,4 +1,5 @@
 import '../App.css';
+import logo from '../logo.svg';
 import ItemList from './ItemList.js';
 import products from '../utils/products.js';
 import {getProducts} from '../utils/products.js';
@@ -24,10 +25,10 @@ function ItemListContainer(props) {
     return (
         <>
             <section className="customMessage">
-                <h1>{props.greet}</h1>
+                <h1>{props.title}</h1>
             </section>
             <section className="ItemListContainer">
-                {items?.length <= 0 ? <p>Loading...</p> : <ItemList products={items} />}
+                {items?.length <= 0 ? <div className="loading-screen"><img src={logo} className="logo" alt="logo" /><p>Loading...</p></div> : <ItemList products={items} />}
             </section>
         </>
     )

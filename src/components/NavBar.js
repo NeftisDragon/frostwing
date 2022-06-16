@@ -13,9 +13,9 @@ function NavBar() {
                 <div className="navigation">
                     <nav>
                         <ul>
-                            <li>INTEL</li>
-                            <li>AMD</li>
-                            <li>ABOUT</li>
+                            <li className="li-1">INTEL</li>
+                            <li className="li-2">AMD</li>
+                            <li className="li-3">ABOUT</li>
                         </ul>
                     </nav>
                 </div>

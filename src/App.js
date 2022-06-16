@@ -11,7 +11,7 @@ function App() {
         <NavBar />
         <main className="App-main">
           <Routes>
-            <Route path="/" element={<ItemListContainer greet="Welcome!"/>} />
+            <Route path="/" element={<ItemListContainer title="Find your CPU"/>} />
             <Route path="/detail/:id" element={<ItemDetailContainer />} />
           </Routes>
         </main>

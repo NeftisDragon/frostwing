@@ -24,7 +24,7 @@ function ItemCount({stock, initial, onAdd}) {
         } else if (newStock > 0 && counter < 1) {
             return null;
         } else {
-            alert("No stock available!");
+            throw Error("Some error.");
         }
     }
 

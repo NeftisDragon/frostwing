@@ -1,3 +1,4 @@
+//cSpell: disable
 const products = [
     {
         id: 0,
@@ -44,10 +45,10 @@ export const getProducts = (time, task, error) => {
     })
 }
 
-export const getProduct = (time, task, error) => {
+export const getProduct = (time, id, error) => {
     return new Promise((res, rej) => {
         setTimeout(() => {
-            res(task);
+            res(products.find(product => product.id === id));
             rej(error);
         }, time)
     })

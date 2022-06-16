@@ -1,4 +1,4 @@
-import './components.css';
+import '../App.css';
 import ItemList from './ItemList.js';
 import products from '../utils/products.js';
 import {getProducts} from '../utils/products.js';
@@ -27,7 +27,7 @@ function ItemListContainer(props) {
                 <h1>{props.greet}</h1>
             </section>
             <section className="ItemListContainer">
-                <ItemList products={items} />
+                {items?.length < 0 ? <p>Loading...</p> : <ItemList products={items} />}
             </section>
         </>
     )

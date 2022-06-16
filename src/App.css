@@ -1,11 +1,13 @@
+/**RESET**/
 * {
   margin: 0;
-  font-size: 16px; }
-  
+  font-size: 16px; 
+}
+
+/**APP**/
 .App {
   text-align: center;
 }
-
 .App-main {
   padding: 120px 0;
   background-color: #282c34;
@@ -15,4 +17,107 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+/**NAVBAR**/
+.header-container {
+  display: grid;
+  grid-template-areas: "logo navigation vectors";
+  align-items: center;
+  background-color: #fbf9f7;
+  position: fixed;
+  width: 100%;
+}
+.logo-container {
+  text-align: center;
+}
+.logo {
+  width: 130px;
+  margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+      animation: spin infinite 20s linear;
+  }
+}
+.navigation {
+  text-align: center;
+}
+.navigation ul {
+  padding: 0%;
+  list-style-type: none;
+  margin: 0 10px;
+}
+.navigation a {
+  text-decoration: none;
+  color: #000;
+}
+.navigation li {
+  display: inline;
+  margin: 0 20px;
+  font-size: 32px;
+}
+.navigation li:hover {
+  color: #61dafb;
+}
+.vectors {
+  display: flex;
+  justify-content: center;
+}
+
+/**CARTWIDGET**/
+.cart-container {
+  background-color: #61dafb;
+  width: max-content;
+  padding: 10px;
+  border-radius: 100%;
+}
+.cart-container:hover {
+  transform: rotateY(180deg);
+  transition: 0.5s;
+}
+.cart-vector {
+  width: 60px;
+  cursor: pointer;
+}
+
+/**ITEMLISTCONTAINER**/
+.customMessage {
+  background-color: #606060;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.customMessage:hover {
+  transition: 0.5s;
+  padding: 15px 20px;
+}
+.customMessage h1 {
+  font-family: 'Roboto';
+  font-size: 48px;
+}
+.ItemListContainer {
+  padding: 20px;
+  margin: 30px;
+  border: 1px solid;
+}
+
+/**ITEM**/
+.item {
+  display: inline-block;
+}
+.item-name {
+  font-size: 36px;
+}
+.item-button {
+  display: block;
+}
+
+/**KEYFRAMES**/
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } 
 }

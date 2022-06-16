@@ -1,9 +1,12 @@
-function ItemDetail({product}) {
+import ItemCount from "./ItemCount";
+
+function ItemDetail({description, price, stock}) {
+    console.log(stock, typeof stock);
     return (
         <>
-            <img src={product.overview} alt="product-overview" className="item-overview" width="300px" />
-            <p>{product.description}</p>
-            <p>{product.price}</p>
+            <p>{description}</p>
+            <p>{price}</p>
+            <ItemCount stock={stock} initial={0} onAdd={() => {}} />
         </>
     )
 }

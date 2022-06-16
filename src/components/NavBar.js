@@ -1,20 +1,21 @@
-import './components.css';
+import '../App.css';
 import logo from '../logo.svg';
 import CartWidget from './CartWidget';
+import {Link} from 'react-router-dom';
 
 function NavBar() {
     return(
         <header>
             <div className="header-container">
                 <div className="logo-container">
-                    <a href="#"><img src={logo} className="logo" alt="logo" /></a>
+                    <Link to="/"><img src={logo} className="logo" alt="logo" /></Link>
                 </div>
                 <div className="navigation">
                     <nav>
                         <ul>
-                            <a href="#"><li>HOME</li></a>
-                            <a href="#"><li>PRODUCTS</li></a>
-                            <a href="#"><li>ABOUT</li></a>
+                            <li>INTEL</li>
+                            <li>AMD</li>
+                            <li>ABOUT</li>
                         </ul>
                     </nav>
                 </div>

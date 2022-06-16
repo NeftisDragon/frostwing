@@ -1,4 +1,4 @@
-import './components.css';
+import '../App.css';
 import Cart from '../assets/vectors/cart.svg';
 
 function CartWidget() {

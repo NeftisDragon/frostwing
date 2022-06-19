@@ -10,7 +10,7 @@
   text-align: center;
 }
 .App-main {
-  padding: 120px 0 80px;
+  padding: 180px 0 80px;
   background-color: #282c34;
   display: flex;
   justify-content: center;
@@ -24,8 +24,10 @@
 .header-container {
   display: grid;
   grid-template-areas: "logo navigation vectors";
+  grid-template-columns: 20% auto 20%;
   align-items: center;
-  background-color: #fbf9f7;
+  /* background-color: #fbf9f7; */
+  background-color: #211f1e;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -52,7 +54,7 @@
 }
 .navigation a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .navigation li {
   display: inline;
@@ -66,7 +68,7 @@
   color: #ef800b;
 }
 .li-3:hover {
-  color: #61dafb;
+  color: #77b900;
 }
 .vectors {
   display: flex;
@@ -97,10 +99,6 @@
   border-radius: 15px;
   transition: 0.5s;
 }
-.customMessage:hover {
-  transition: 0.5s;
-  padding: 15px 20px;
-}
 .customMessage h1 {
   font-family: 'Roboto';
   font-size: 48px;
@@ -125,12 +123,12 @@
 
 /**ITEM**/
 .item {
+  border: none;
   padding: 10px;
-  border: 2px solid;
   border-radius: 10px;
   display: inline-block;
   margin: 20px;
-  background-color: #fff;
+  background-color: #121212;
   width: 350px;
   box-shadow: 5px 5px 15px #61dafb;
   transition: 1s;
@@ -141,11 +139,14 @@
 }
 .item-name {
   font-size: 32px;
-  color: #000;
+  color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0 0 10px;
+}
+.item-overview {
+  width: 340px;
 }
 .item hr {
   width: auto;
@@ -159,7 +160,7 @@
 .item-button {
   text-decoration: none;
   font-size: 24px;
-  color: #000;
+  color: #fff;
   background-color: #61dafb;
   width: fit-content;
   padding: 10px 15px;

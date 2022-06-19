@@ -4,7 +4,7 @@ import scroll from '../assets/vectors/scroll.svg';
 function ScrollUp() {
     return (
         <aside>
-            <a href="#top"><img src={scroll} className="scrollUp"/></a>
+            <a href="#top"><img src={scroll} className="scrollUp" title="Back to Top"/></a>
         </aside>
     )
 }

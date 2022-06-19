@@ -1,7 +1,6 @@
 import ItemCount from "./ItemCount";
 
 function ItemDetail({description, price, stock}) {
-    console.log(stock, typeof stock);
     return (
         <>
             <p>{description}</p>

@@ -5,6 +5,7 @@ import ScrollUp from './ScrollUp.jsx';
 import products from '../utils/products.js';
 import {getProducts} from '../utils/products.js';
 import {useEffect, useState} from 'react';
+import { useParams } from 'react-router-dom';
 
 function customError() {
     throw Error("Failed to get resources.");
@@ -12,6 +13,7 @@ function customError() {
 
 function ItemListContainer(props) {
     const [items, setItems] = useState([]);
+    const {category} = useParams();
 
     useEffect(() => {
         getProducts(2000, products, customError)
@@ -21,7 +23,7 @@ function ItemListContainer(props) {
         .catch(error => {
             customError(error);
         })
-    }, [items])
+    }, [category])
 
     return (
         <>

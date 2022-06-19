@@ -1,7 +1,7 @@
 import '../App.css';
 import logo from '../logo.svg';
 import CartWidget from './CartWidget';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 function NavBar() {
     return(
@@ -13,9 +13,9 @@ function NavBar() {
                 <div className="navigation">
                     <nav>
                         <ul>
-                            <li className="li-1">INTEL</li>
-                            <li className="li-2">AMD</li>
-                            <li className="li-3">ABOUT</li>
+                            <NavLink to="/category/Intel"><li className="li-1">INTEL</li></NavLink>
+                            <NavLink to="/category/AMD"><li className="li-2">AMD</li></NavLink>
+                            <NavLink to="/about"><li className="li-3">ABOUT</li></NavLink>
                         </ul>
                     </nav>
                 </div>

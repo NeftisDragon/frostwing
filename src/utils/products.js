@@ -3,7 +3,7 @@ const products = [
     {
         id: 0,
         name: 'AMD Athlon PRO 300GE',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Athlon_PRO_300GE.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 1100.00,
         stock: 10,
@@ -12,7 +12,7 @@ const products = [
     {
         id: 1,
         name: 'Intel Celeron G5925',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Celeron_G5925.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 49.95,
         stock: 5,
@@ -21,7 +21,7 @@ const products = [
     {
         id: 2,
         name: 'Intel Celeron G6900',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Celeron_G6900.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 70.00,
         stock: 23,
@@ -30,7 +30,7 @@ const products = [
     {
         id: 3,
         name: 'Intel Core i3-10105F',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i3-10105F.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 78.99,
         stock: 7,
@@ -39,7 +39,7 @@ const products = [
     {
         id: 4,
         name: 'Intel Core i3-12100F',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i3-12100F.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 111.99,
         stock: 13,
@@ -48,7 +48,7 @@ const products = [
     {
         id: 5,
         name: 'Intel Core i5-10500T',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i5-10500T.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 192.00,
         stock: 11,
@@ -57,7 +57,7 @@ const products = [
     {
         id: 6,
         name: 'Intel Core i5-12500T',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i5-12500T.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 202.00,
         stock: 21,
@@ -66,7 +66,7 @@ const products = [
     {
         id: 7,
         name: 'Intel Core i7-7700',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i7-7700.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 321.85,
         stock: 16,
@@ -75,7 +75,7 @@ const products = [
     {
         id: 8,
         name: 'Intel Core i7-11700F',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i7-11700F.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 289.98,
         stock: 19,
@@ -84,7 +84,7 @@ const products = [
     {
         id: 9,
         name: 'Intel Core i7-12700F',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i7-12700F.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 312.97,
         stock: 19,
@@ -93,7 +93,7 @@ const products = [
     {
         id: 10,
         name: 'Intel Core i9-10900X',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i9-10900X.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 564.03,
         stock: 2,
@@ -102,7 +102,7 @@ const products = [
     {
         id: 11,
         name: 'Intel Core i9-11900K',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i9-11900K.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 389.99,
         stock: 9,
@@ -111,7 +111,7 @@ const products = [
     {
         id: 12,
         name: 'Intel Corn i9-12900KS',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/i9-12900KS.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 749.99,
         stock: 6,
@@ -120,7 +120,7 @@ const products = [
     {
         id: 13,
         name: 'Intel Pentium G6605',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Pentium_G6605.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 86.00,
         stock: 16,
@@ -129,7 +129,7 @@ const products = [
     {
         id: 14,
         name: 'AMD Ryzen 5 5600X',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Ryzen_5_5600X.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 198.88,
         stock: 11,
@@ -138,7 +138,7 @@ const products = [
     {
         id: 15,
         name: 'AMD Ryzen 7 5700G',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Ryzen_7_5700G.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 272.99,
         stock: 20,
@@ -147,7 +147,7 @@ const products = [
     {
         id: 16,
         name: 'AMD Ryzen 9 5950X',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Ryzen_9_5950X.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 546.99,
         stock: 9,
@@ -156,7 +156,7 @@ const products = [
     {
         id: 17,
         name: 'AMD Ryzen Threadripper PRO 3995WX',
-        overview: 'https://bitsofco.de/content/images/2018/12/broken-1.png',
+        overview: '/assets/images/CPUs/Ryzen_Threadripper_PRO_3995WX.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates!',
         price: 7459.79,
         stock: 1,

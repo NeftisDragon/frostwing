@@ -1,5 +1,5 @@
 import '../App.css';
-import logo from '../logo.svg';
+import logo from '../assets/images/FrostWing_logo(1).png';
 import CartWidget from './CartWidget';
 import {Link, NavLink} from 'react-router-dom';
 
@@ -8,7 +8,7 @@ function NavBar() {
         <header>
             <div className="header-container">
                 <div className="logo-container">
-                    <Link to="/"><img src={logo} className="logo" alt="logo" /></Link>
+                    <Link to="/"><img src={logo} className="mainLogo" alt="logo" /></Link>
                 </div>
                 <div className="navigation">
                     <nav>

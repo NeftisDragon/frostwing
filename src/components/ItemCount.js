@@ -1,3 +1,4 @@
+import '../App.css';
 import {useState} from 'react';
 
 function ItemCount({stock, initial, onAdd}) {
@@ -29,11 +30,15 @@ function ItemCount({stock, initial, onAdd}) {
     }
 
     return (
-        <section>
-            <p>{counter}</p>
-            <button onClick={decreaseCounter}>-</button>
-            <button onClick={increaseCounter}>+</button>
-            <button onClick={success}>Confirm</button>
+        <section className="counter">
+            <div className="q-selection">
+                <button onClick={decreaseCounter} className="decrease-counter">&#8722;</button>
+                <p>{counter}</p>
+                <button onClick={increaseCounter} className="increase-counter">&#43;</button>
+            </div>
+            <div className="q-confirmation">
+                <button onClick={success}>CONFIRM</button>
+            </div>
         </section>
     )
 }

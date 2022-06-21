@@ -1,12 +1,23 @@
-import ItemCount from "./ItemCount";
+import '../App.css';
+import ItemCount from './ItemCount';
 
-function ItemDetail({description, price, stock}) {
+function ItemDetail({name, overview, description, price, stock}) {
     return (
-        <>
-            <p>{description}</p>
-            <p>${price}</p>
-            <ItemCount stock={stock} initial={0} onAdd={() => {}} />
-        </>
+        <section className="detail-container">
+                <div className="overview-container">
+                    <p className="item-name">{name}</p>
+                    <img src={overview} alt="product-overview" className="detail-overview" />
+                </div>
+                <div className="description">
+                    <div className="description-container">
+                        <p className="detail-description">{description}</p>
+                        <p className="detail-price">${price}</p>
+                    </div>
+                    <div className="counter-container">
+                        <ItemCount stock={stock} initial={0} onAdd={() => {}} />
+                    </div>
+                </div>
+        </section>
     )
 }
 

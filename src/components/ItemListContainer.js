@@ -2,7 +2,6 @@ import '../App.css';
 import logo from '../logo.svg';
 import ItemList from './ItemList.js';
 import ScrollUp from './ScrollUp.jsx';
-import products from '../utils/products.js';
 import {getProducts} from '../utils/products.js';
 import {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
@@ -11,14 +10,18 @@ function customError() {
     throw Error("Failed to get resources.");
 }
 
-function ItemListContainer(props) {
+function ItemListContainer() {
     const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true);
     const {category} = useParams();
 
     useEffect(() => {
-        getProducts(2000, products, customError)
+        setLoading(true);
+
+        getProducts(2000, category, customError)
         .then(r => {
             setItems(r);
+            setLoading(false);
         })
         .catch(error => {
             customError(error);
@@ -28,10 +31,10 @@ function ItemListContainer(props) {
     return (
         <>
             <section id="top" className="customMessage">
-                <h1>{props.title}</h1>
+                <h1>Find your CPU</h1>
             </section>
             <section className="ItemListContainer">
-                {items?.length <= 0 ? <div className="loading-screen"><img src={logo} className="logo" alt="logo" /><p>Loading...</p></div> : <ItemList products={items} />}
+                {loading ? <div className="loading-screen"><img src={logo} className="logo" alt="logo" /><p>Loading...</p></div> : <ItemList products={items} />}
                 <ScrollUp />
             </section>
             <section>

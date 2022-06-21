@@ -10,7 +10,7 @@
   text-align: center;
 }
 .App-main {
-  padding: 180px 0 80px;
+  padding: 160px 0 80px;
   background-color: #282c34;
   display: flex;
   justify-content: center;
@@ -35,9 +35,9 @@
 .logo-container {
   text-align: center;
 }
-.logo {
-  width: 130px;
-  margin: 0;
+.mainLogo {
+  width: 145px;
+  margin: 3px;
 }
 @media (prefers-reduced-motion: no-preference) {
   .logo {
@@ -110,6 +110,7 @@
 .loading-screen {
   display: flex;
   flex-flow: column;
+  margin: 80px 0 180px;
 }
 .loading-screen img {
   width: 300px;
@@ -169,6 +170,123 @@
 }
 .item-button:hover {
   background-color: #94e2f8;
+}
+
+/**ITEMDETAIL**/
+.detail-container {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 30px 30px;
+}
+.detail-container div {
+  margin: 0 50px;
+}
+.overview-container {
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+}
+.item-name {
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail-overview {
+  width: 400px;
+}
+.description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.description div {
+  margin: 10px;
+}
+.description-container {
+  background-color:#121212;
+  padding: 30px;
+  border-radius: 10px;
+  height: 300px;
+}
+.detail-description {
+  width: 400px;
+  text-align: left;
+  font-size: 18px;
+}
+.detail-description:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: inherit;
+  margin: 30px auto 0;
+  background-color: #abaaaa;
+}
+.detail-price {
+  font-size: 36px;
+  margin: 30px 0;
+  color: rgb(255, 215, 0);
+}
+.counter-container {
+  background-color: #606060;
+  width: 400px;
+  padding: 0 30px;
+  border-radius: 10px;
+}
+
+/**ITEMCOUNT**/
+.counter {
+  display: flex;
+  flex-flow: column;
+}
+.q-selection {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.q-selection button {
+  display: inline;
+  font-size: 38px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  font-family: 'DM Sans';
+  background-color: #95e6fc;
+  cursor: pointer;
+}
+.increase-counter:hover {
+  background-color: #77dd76;
+}
+.decrease-counter:hover {
+  background-color: #ff6962;
+}
+.q-selection button:active {
+  background-color: #bdc0c1;
+}
+.q-selection p {
+  display: inline;
+  font-size: 36px;
+  margin: 0 30px;
+}
+.q-confirmation button {
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: 'DM Sans';
+  background-color: #aceafb;
+}
+.q-confirmation button:hover {
+  background-color: #61dafb;
+  cursor: pointer;
+}
+.q-confirmation button:active {
+  background-color: #bdc0c1;
 }
 
 /**SCROLLUP**/

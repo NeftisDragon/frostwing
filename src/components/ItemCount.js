@@ -3,30 +3,21 @@ import {useState} from 'react';
 
 function ItemCount({stock, initial, onAdd}) {
     const [counter, setCounter] = useState(initial);
-    const [newStock, setNewStock] = useState(stock);
 
     const increaseCounter = () => {
         if(counter < stock) {
             setCounter(counter + 1);
-            setNewStock(newStock - 1);
         }
     }
 
     const decreaseCounter = () => {
         if (counter > initial){
             setCounter(counter -1);
-            setNewStock(newStock + 1);
         }
     }
 
     const success = () => {
-        if (newStock > 0 && counter >= 1) {
-            alert("Product added!");
-        } else if (newStock > 0 && counter < 1) {
-            return null;
-        } else {
-            throw Error("Some error.");
-        }
+        onAdd(counter);
     }
 
     return (

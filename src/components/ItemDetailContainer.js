@@ -17,7 +17,7 @@ function ItemDetailContainer() {
     useEffect(() => {
         setLoading(true);
 
-        getProduct(2000, parseInt(id), customError)
+        getProduct(2000, id, customError)
         .then(r => {
             setProduct(r);
             setLoading(false);

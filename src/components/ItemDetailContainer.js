@@ -29,7 +29,7 @@ function ItemDetailContainer() {
 
     return (
         <>
-            {loading ? <div className="loading-screen"><img src={logo} className="logo" alt="logo" /><p>Loading...</p></div> : <ItemDetail {...product} />}
+            {loading ? <div className="loading-screen"><img src={logo} className="logo" alt="logo" /><p>Loading...</p></div> : <ItemDetail item={product} />}
         </>
     )
 }

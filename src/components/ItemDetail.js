@@ -1,15 +1,21 @@
 import '../App.css';
 import ItemCount from './ItemCount';
-import {useState} from 'react';
+import {useState, useContext} from 'react';
 import {Link} from 'react-router-dom';
+import {CartContext} from '../utils/Context.jsx';
 
-function ItemDetail({name, overview, description, price, stock}) {
-    const [confirm, setConfirm] = useState(true);
+function ItemDetail({item}) {
+    const {addItem, isInCart} = useContext(CartContext);
+    const [counter, setCounter] = useState(0);
 
-    const onAdd = (quantity) => {
-        if (quantity >= 1) {
+    const onAdd = () => {
+        if (counter >= 1) {
+            const itemToCart = {
+                ...item,
+                quantity: counter,
+            }
+            addItem(itemToCart);
             console.log("Product added!");
-            setConfirm(false);
         } else {
             return null;
         }
@@ -18,16 +24,18 @@ function ItemDetail({name, overview, description, price, stock}) {
     return (
         <section className="detail-container">
                 <div className="overview-container">
-                    <p className="item-name">{name}</p>
-                    <img src={overview} alt="product-overview" className="detail-overview" />
+                    <p className="item-name">{item.name}</p>
+                    <img src={item.overview} alt="product-overview" className="detail-overview" />
                 </div>
                 <div className="description">
                     <div className="description-container">
-                        <p className="detail-description">{description}</p>
-                        <p className="detail-price">${price}</p>
+                        <p className="detail-description">{item.description}</p>
+                        <p className="detail-price">${item.price}</p>
                     </div>
-                    <div className="counter-container">
-                        {confirm ? <ItemCount stock={stock} initial={0} onAdd={onAdd} /> : <div className="view-cart-container"><Link to={`/cart`} className="view-cart">Go to Cart</Link></div>}
+                    <div className="counter-container"> 
+                        {
+                        !isInCart ? <ItemCount stock={item.stock} counter={counter} setCounter={setCounter} onAdd={onAdd} /> : <div className="view-cart-container"><Link to={`/cart`} className="view-cart">Go to Cart</Link></div>
+                        }
                     </div>
                 </div>
         </section>

@@ -24,7 +24,7 @@ function NavBar() {
                     </nav>
                 </div>
                 <div className="vectors">
-                    <NavLink to ="/cart"><CartWidget /></NavLink>
+                    <CartWidget />
                 </div>
             </div>
         </header>

@@ -5,7 +5,8 @@ import {Link} from 'react-router-dom';
 import {CartContext} from '../utils/Context.jsx';
 
 function ItemDetail({item}) {
-    const {addItem, isInCart} = useContext(CartContext);
+    const {addItem} = useContext(CartContext);
+    const [confirm, setConfirm] = useState(true);
     const [counter, setCounter] = useState(0);
 
     const onAdd = () => {
@@ -15,6 +16,7 @@ function ItemDetail({item}) {
                 quantity: counter,
             }
             addItem(itemToCart);
+            setConfirm(false);
             console.log("Product added!");
         } else {
             return null;
@@ -34,7 +36,7 @@ function ItemDetail({item}) {
                     </div>
                     <div className="counter-container"> 
                         {
-                        !isInCart ? <ItemCount stock={item.stock} counter={counter} setCounter={setCounter} onAdd={onAdd} /> : <div className="view-cart-container"><Link to={`/cart`} className="view-cart">Go to Cart</Link></div>
+                        confirm ? <ItemCount stock={item.stock} counter={counter} setCounter={setCounter} onAdd={onAdd} /> : <div className="view-cart-container"><Link to={`/cart`} className="view-cart">Go to Cart</Link></div>
                         }
                     </div>
                 </div>

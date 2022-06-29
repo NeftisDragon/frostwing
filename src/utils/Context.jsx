@@ -39,11 +39,13 @@ export const MyProvider = ({children}) => {
         cart.forEach((item) => {
             quantity = quantity + item.quantity;
         })
-        /* return cart.reduce((acc, item) => acc += item.quantity, 0); */
     }
 
     const getTotalPrice = () => {
-        return cart.reduce((acc, item) => acc += (item.price * item.quantity), 0);
+        let price = 0;
+        cart.forEach((item) => {
+            price = price + (item.price * item.quantity);
+        })
     }
 
     const contextValue = {

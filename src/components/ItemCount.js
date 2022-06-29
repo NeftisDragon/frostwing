@@ -1,7 +1,6 @@
 import '../App.css';
 
 function ItemCount({stock, counter, setCounter, onAdd}) {
-    /* const [counter, setCounter] = useState(initial); */
 
     const increaseCounter = () => {
         if(counter < stock) {
@@ -10,7 +9,7 @@ function ItemCount({stock, counter, setCounter, onAdd}) {
     }
 
     const decreaseCounter = () => {
-        if (counter > initial){
+        if (counter > 0){
             setCounter(counter -1);
         }
     }

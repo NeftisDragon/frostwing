@@ -18,7 +18,7 @@ function ItemListContainer() {
     useEffect(() => {
         setLoading(true);
 
-        getProducts(2000, category, customError)
+        getProducts(1500, category, customError)
         .then(r => {
             setItems(r);
             setLoading(false);

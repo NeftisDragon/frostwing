@@ -1,8 +1,8 @@
 import '../App.css';
 import Cart from '../assets/vectors/cart.svg';
-import {NavLink} from 'react-router-dom';
-import {useContext} from 'react';
-import {CartContext} from '../utils/Context.jsx';
+import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../utils/Context.jsx';
 
 function CartWidget() {
     const r = useContext(CartContext);

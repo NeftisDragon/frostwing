@@ -1,10 +1,10 @@
 import './App.css';
-import NavBar from './components/NavBar.js';
-import ItemListContainer from './components/ItemListContainer.js';
+import NavBar from './components/NavBar.jsx';
+import ItemListContainer from './components/ItemListContainer.jsx';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import Cart from './components/Cart.js';
-import { MyProvider } from './utils/Context';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Cart from './components/Cart.jsx';
+import { MyProvider } from './utils/Context.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

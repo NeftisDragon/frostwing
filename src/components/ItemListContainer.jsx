@@ -1,9 +1,9 @@
 import '../App.css';
 import logo from '../logo.svg';
-import ItemList from './ItemList.js';
+import ItemList from './ItemList.jsx';
 import ScrollUp from './ScrollUp.jsx';
-import {getProducts} from '../utils/products.js';
-import {useEffect, useState} from 'react';
+import { getProducts } from '../utils/products.js';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 function customError() {
@@ -13,19 +13,19 @@ function customError() {
 function ItemListContainer() {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
-    const {category} = useParams();
+    const { category } = useParams();
 
     useEffect(() => {
         setLoading(true);
 
         getProducts(1500, category, customError)
-        .then(r => {
-            setItems(r);
-            setLoading(false);
-        })
-        .catch(error => {
-            customError(error);
-        })
+            .then(r => {
+                setItems(r);
+                setLoading(false);
+            })
+            .catch(error => {
+                customError(error);
+            })
     }, [category])
 
     return (

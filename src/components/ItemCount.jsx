@@ -1,16 +1,16 @@
 import '../App.css';
 
-function ItemCount({stock, counter, setCounter, onAdd}) {
+function ItemCount({ stock, counter, setCounter, onAdd }) {
 
     const increaseCounter = () => {
-        if(counter < stock) {
+        if (counter < stock) {
             setCounter(counter + 1);
         }
     }
 
     const decreaseCounter = () => {
-        if (counter > 0){
-            setCounter(counter -1);
+        if (counter > 0) {
+            setCounter(counter - 1);
         }
     }
 

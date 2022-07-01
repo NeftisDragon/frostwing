@@ -17,7 +17,6 @@ function ItemDetail({ item }) {
             }
             addItem(itemToCart);
             setConfirm(false);
-            console.log("Product added!");
         } else {
             return null;
         }

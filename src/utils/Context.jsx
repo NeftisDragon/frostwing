@@ -34,13 +34,6 @@ export const MyProvider = ({ children }) => {
         setCart([]);
     }
 
-    const getTotalQuantity = () => {
-        let quantity = 0;
-        cart.forEach((item) => {
-            quantity = quantity + item.quantity;
-        })
-    }
-
     const getSubtotal = (price, quantity) => {
         let subtotal = 0;
         subtotal += price * quantity;
@@ -55,15 +48,23 @@ export const MyProvider = ({ children }) => {
         return Number(total);
     }
 
+    const getLength = () => {
+        let length = 0;
+        cart.forEach((item) => {
+            length = length + item.quantity;
+        })
+        return length;
+    }
+
     const contextValue = {
         cart: cart,
         isInCart,
         addItem,
         removeItem,
         clearCart,
-        getTotalQuantity,
         getSubtotal,
         getGrandTotal,
+        getLength,
     }
 
     return (

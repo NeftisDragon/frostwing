@@ -115,6 +115,25 @@
   cursor: pointer;
 }
 
+.total-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 58px;
+  padding: 4px;
+  bottom: 22%;
+  background-color: #ef800b;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.total-items p {
+  font-size: 16px;
+  color: #fff;
+}
+
 /**ITEMLISTCONTAINER**/
 .customMessage {
   background-color: #606060;

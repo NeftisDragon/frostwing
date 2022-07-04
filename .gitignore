@@ -5,6 +5,8 @@
 /.vscode
 
 # config
+src/utils/firebase.js
+src/utils/firestore.js
 
 # testing
 /coverage

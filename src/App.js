@@ -5,9 +5,6 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart.jsx';
 import { MyProvider } from './utils/Context.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { db } from './utils/firestore.js';
-
-console.log(db);
 
 function App() {
   return (

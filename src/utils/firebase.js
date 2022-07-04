@@ -1,5 +1,7 @@
 //cSpell: disable
 
+//1st attempt. I started off from this file and uploaded my array to firestore. Now imports won't work. Tried reinstalling, resetting the server, etc.
+
 const firebase = require("firebase");
 require("firebase/firestore");
 

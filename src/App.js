@@ -6,6 +6,11 @@ import Cart from './components/Cart.jsx';
 import { MyProvider } from './utils/Context.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+//As expected, the error shows up only when importing the database, as otherwise the scripts aren't connected.
+import { db } from './utils/firestore.js';
+
+console.log(db);
+
 function App() {
   return (
     <div className="App">

@@ -1,7 +1,5 @@
 //cSpell: disable
 
-//2nd attempt. Tried doing it exactly like the professor did. Won't work either.
-
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 

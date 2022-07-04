@@ -7,7 +7,7 @@ function CartWidget() {
     const { getLength } = useCartContext();
 
     return (
-        <NavLink to="/cart">
+        <NavLink to="/cart" className="cart-widget">
             <div className="cart-container">
                 <img className="cart-vector" src={Cart} />
             </div>

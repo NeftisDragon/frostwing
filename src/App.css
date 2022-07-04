@@ -98,6 +98,10 @@
 }
 
 /**CARTWIDGET**/
+.cart-widget {
+  text-decoration: none;
+}
+
 .cart-container {
   background-color: #61dafb;
   width: max-content;
@@ -119,14 +123,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: 58px;
+  position: absolute;
+  top: 60%;
   padding: 4px;
-  bottom: 22%;
   background-color: #ef800b;
   width: 20px;
   height: 20px;
   border-radius: 100%;
+  margin: auto;
 }
 
 .total-items p {

@@ -5,8 +5,9 @@
 /.vscode
 
 # config
-src/utils/firebase.js
-src/utils/firestore.js
+.env
+
+# utils
 src/utils/products.js
 
 # testing

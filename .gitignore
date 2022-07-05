@@ -7,9 +7,6 @@
 # config
 .env
 
-# utils
-src/utils/products.js
-
 # testing
 /coverage
 

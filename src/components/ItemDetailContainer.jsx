@@ -1,9 +1,10 @@
 import '../App.css';
 import ItemDetail from './ItemDetail.jsx';
 import logo from '../logo.svg';
-import { getProduct } from '../utils/products.js';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { db } from '../utils/firestore.js';
+import { collection, doc, getDoc } from 'firebase/firestore';
 
 function ItemDetailContainer() {
     const [product, setProduct] = useState({});
@@ -16,10 +17,13 @@ function ItemDetailContainer() {
 
     useEffect(() => {
         setLoading(true);
+        const productCollection = collection(db, "products");
+        const docRef = doc(productCollection, id);
+        const query = getDoc(docRef);
 
-        getProduct(1500, id, customError)
+        query
             .then(r => {
-                setProduct(r);
+                setProduct(r.data());
                 setLoading(false);
             })
             .catch(error => {

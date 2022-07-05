@@ -2,9 +2,10 @@ import '../App.css';
 import logo from '../logo.svg';
 import ItemList from './ItemList.jsx';
 import ScrollUp from './ScrollUp.jsx';
-import { getProducts } from '../utils/products.js';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { db } from '../utils/firestore.js';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 
 function customError() {
     throw Error("Failed to get resources.");
@@ -17,10 +18,18 @@ function ItemListContainer() {
 
     useEffect(() => {
         setLoading(true);
+        const productCollection = collection(db, "products");
+        const ref = category ? query(productCollection, where('category', '==', category)) : productCollection;
 
-        getProducts(1500, category, customError)
+        getDocs(ref)
             .then(r => {
-                setItems(r);
+                const products_map = r.docs.map(doc => {
+                    const aux = doc.data();
+                    aux.id = doc.id;
+                    return aux;
+                })
+
+                setItems(products_map);
                 setLoading(false);
             })
             .catch(error => {

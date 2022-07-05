@@ -1,5 +1,4 @@
 //cSpell: disable
-
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection } from 'firebase/firestore';
 

@@ -5,6 +5,17 @@
   scroll-behavior: smooth;
 }
 
+/**KEYFRAMES**/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /**APP**/
 .App {
   text-align: center;
@@ -332,7 +343,6 @@
   background-color: #bdc0c1;
 }
 
-
 /**ITEMCOUNT**/
 .counter {
   display: flex;
@@ -353,7 +363,7 @@
   border: none;
   border-radius: 100%;
   font-family: 'DM Sans';
-  background-color: #95e6fc;
+  background-color: #95e6ff;
   cursor: pointer;
 }
 
@@ -365,7 +375,11 @@
   background-color: #ff6962;
 }
 
-.q-selection button:active {
+.increase-counter:active {
+  background-color: #bdc0c1;
+}
+
+.decrease-counter:active {
   background-color: #bdc0c1;
 }
 
@@ -594,13 +608,122 @@
   opacity: 100%;
 }
 
-/**KEYFRAMES**/
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1200px) {
+
+  /**NAVBAR**/
+  .li-1:hover {
+    color: inherit;
   }
 
-  to {
-    transform: rotate(360deg);
+  .li-2:hover {
+    color: inherit;
+  }
+
+  .li-3:hover {
+    color: #fff;
+  }
+
+  .li-1:active {
+    color: #066eb8;
+  }
+
+  .li-2:active {
+    color: #ef800b;
+  }
+
+  .li-3:active {
+    color: #78bc04;
+  }
+
+  /**CARTWIDGET**/
+  .cart-container:hover {
+    transform: none;
+  }
+
+  /**ITEM**/
+  .item:hover {
+    transform: none;
+  }
+
+  .item-button:hover {
+    background-color: #61dafb;
+  }
+
+  .item-button:active {
+    background-color: #94e2f8;
+  }
+
+  /**ITEMDETAIL**/
+  .view-cart:hover {
+    background-color: #aceafb;
+  }
+
+  /**ITEMCOUNT**/
+  .increase-counter:hover {
+    background-color: #95e6ff
+  }
+
+  .decrease-counter:hover {
+    background-color: #95e6ff;
+  }
+
+  .increase-counter:active {
+    background-color: #77dd76;
+  }
+
+  .decrease-counter:active {
+    background-color: #ff6962;
+  }
+
+  .q-confirmation button:hover {
+    background-color: #aceafb;
+  }
+
+  /**CART**/
+  .table ul li .removeBTN:hover {
+    background-color: rgba(227, 73, 73, 0.718);
+  }
+
+  .table ul li .removeBTN:active {
+    background-color: rgba(241, 37, 37, 0.901);
+  }
+
+  .table ul li .clear-cart-btn button:hover {
+    background-color: #efefef;
+    color: #000;
+  }
+
+  .table ul li .clear-cart-btn button:active {
+    background-color: rgba(241, 37, 37, 0.901);
+    color: #fff;
+  }
+
+  .table ul li .continue-btn button:hover {
+    background-color: #efefef;
+    color: #000;
+  }
+
+  .table ul li .continue-btn button:active {
+    background-color: rgba(37, 241, 37, 0.901);
+    color: #fff;
+  }
+
+  /**FORM**/
+  .checkout-btn:hover {
+    background-color: #efefef;
+    color: #000;
+  }
+
+  .checkout-btn:active {
+    background-color: rgba(37, 241, 37, 0.901);
+    color: #fff;
+  }
+
+  .return-btn:hover {
+    background-color: #efefef;
+  }
+
+  .return-btn:active {
+    background-color: #fff;
   }
 }

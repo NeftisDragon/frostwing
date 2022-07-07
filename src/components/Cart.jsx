@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 import emptyCart from '../assets/vectors/empty.svg';
 import remove from '../assets/vectors/remove.svg';
 import Form from './Form.jsx';

@@ -4,9 +4,6 @@
 .pnp.js
 /.vscode
 
-# config
-.env
-
 # testing
 /coverage
 

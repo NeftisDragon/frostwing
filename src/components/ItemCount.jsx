@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 
 function ItemCount({ stock, counter, setCounter, onAdd }) {
 

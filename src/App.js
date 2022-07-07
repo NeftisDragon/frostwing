@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import NavBar from './components/NavBar.jsx';
 import ItemListContainer from './components/ItemListContainer.jsx';
 import ItemDetailContainer from './components/ItemDetailContainer';

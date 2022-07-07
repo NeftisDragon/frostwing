@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 
 function Form({ handleChange, data, handleSubmit }) {
     return (

@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 import logo from '../assets/images/FrostWing_logo.png';
 import CartWidget from './CartWidget';
 import { Link, NavLink } from 'react-router-dom';

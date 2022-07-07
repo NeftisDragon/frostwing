@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 import ItemCount from './ItemCount';
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';

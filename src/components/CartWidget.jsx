@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 import Cart from '../assets/vectors/cart.svg';
 import { NavLink } from 'react-router-dom';
 import { useCartContext } from '../utils/Context.jsx';

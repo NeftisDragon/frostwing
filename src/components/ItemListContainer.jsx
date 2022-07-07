@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 import logo from '../logo.svg';
 import ItemList from './ItemList.jsx';
 import ScrollUp from './ScrollUp.jsx';

@@ -1,4 +1,4 @@
-import '../App.css';
+import '../styles/App.css';
 import ItemDetail from './ItemDetail.jsx';
 import logo from '../logo.svg';
 import { useEffect, useState } from 'react';

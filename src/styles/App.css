@@ -451,6 +451,12 @@
   text-align: left;
 }
 
+.table-row div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .table ul li .removeBTN {
   display: flex;
   border: none;
@@ -520,7 +526,7 @@
 }
 
 .table ul .col-1 {
-  flex-basis: 30%;
+  flex-basis: 25%;
 }
 
 .table ul .col-2 {
@@ -627,7 +633,6 @@
   }
 
   .copyright {
-    color: rgb(165, 165, 165);
     font-size: 42px;
   }
 
@@ -844,7 +849,7 @@
   }
 
   .table ul .col-1 {
-    flex-basis: 40%;
+    flex-basis: 35%;
   }
 
   .table ul .col-2 {
@@ -1342,7 +1347,6 @@
   }
 
   .copyright {
-    color: rgb(165, 165, 165);
     font-size: 12px;
   }
 
@@ -1513,6 +1517,22 @@
     width: 650px;
   }
 
+  .table ul .col-1 {
+    flex-basis: 40%;
+  }
+
+  .table ul .col-2 {
+    flex-basis: 25%;
+  }
+
+  .table ul .col-3 {
+    flex-basis: 25%;
+  }
+
+  .table ul .col-4 {
+    flex-basis: 8%;
+  }
+
   /**FORM**/
   .formulary {
     margin: 10px 50px;
@@ -1537,7 +1557,6 @@
   }
 
   .copyright {
-    color: rgb(165, 165, 165);
     font-size: 10px;
   }
 
@@ -1711,22 +1730,6 @@
     font-size: 24px;
   }
 
-  .table ul .col-1 {
-    flex-basis: 45%;
-  }
-
-  .table ul .col-2 {
-    flex-basis: 25%;
-  }
-
-  .table ul .col-3 {
-    flex-basis: 25%;
-  }
-
-  .table ul .col-4 {
-    flex-basis: 5%;
-  }
-
   /**FORM**/
   .formulary form label {
     margin: 20px 0 10px;
@@ -1747,13 +1750,152 @@
   }
 
   .return-btn {
-    margin: 0px 0 -20px;
+    margin: 0 0 -20px;
     padding: 10px 30px;
     font-size: 18px;
   }
 }
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+
+  /**APP**/
+  .App-main {
+    padding: 95px 0 20px;
+  }
+
+  .disclaimer {
+    margin: 15px 30px 20px;
+    font-size: 8px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+
+  /**NAVBAR**/
+  .mainLogo {
+    width: 75px;
+  }
+
+  .navigation li {
+    margin: 0 15px;
+    font-size: 18px;
+  }
+
+  /**CARTWIDGET**/
+  .cart-vector {
+    width: 32px;
+  }
+
+  .cart-container {
+    padding: 5px;
+  }
+
+  .total-items {
+    top: 60%;
+    padding: 4px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .total-items p {
+    font-size: 12px;
+  }
+
+  /**ITEMLISTCONTAINER**/
+  .customMessage h1 {
+    font-size: 24px;
+  }
+
+  .ItemListContainer {
+    margin: 8px;
+  }
+
+  /**ITEMDETAIL**/
+  .detail-container {
+    margin: 20px 30px 80px;
+  }
+
+  .detail-container div {
+    margin: 0 6px;
+  }
+
+  .overview-container {
+    width: 200px;
+    padding: 5px 10px 10px;
+  }
+
+  .detail-overview {
+    width: 200px;
+  }
+
+  .description-container {
+    padding: 15px;
+    height: 335px;
+  }
+
+  .detail-description {
+    width: 180px;
+    font-size: 14px;
+  }
+
+  .counter-container {
+    width: 190px;
+    padding: 10px;
+  }
+
+  /**CART**/
+  .cart-empty {
+    margin: 90px 0 160px;
+  }
+
+  .cart {
+    margin: 5px;
+  }
+
+  .table {
+    width: 440px;
+  }
+
+  .table ul li {
+    padding: 20px 30px;
+  }
+
+  .table ul li div {
+    font-size: 12px;
+  }
+
+  .table ul li .removeBTN {
+    padding: 5px;
+  }
+
+  .table ul li .removeBTN img {
+    width: 10px;
+  }
+
+  .table ul li .clear-cart-btn button {
+    padding: 8px 20px;
+    font-size: 20px;
+  }
+
+  .table ul li .continue-btn button {
+    padding: 8px 20px;
+    font-size: 20px;
+  }
+
+  /**FORM**/
+  .checkout-btn {
+    margin: 30px;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  .return-btn {
+    margin: 0 0 -10px;
+    padding: 8px 30px;
+    font-size: 18px;
+  }
+}
 
 @media (max-width: 480px) {}
 

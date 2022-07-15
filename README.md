@@ -12,7 +12,7 @@ Cheers!
 
 Here are a set of short GIFs to show the website's navigation and how to move around it.
 
-The website can be accessed here:
+The website can be accessed here: https://frostwing.vercel.app
 
 ### Navigation
 

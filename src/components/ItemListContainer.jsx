@@ -18,6 +18,7 @@ function ItemListContainer() {
 
     useEffect(() => {
         setLoading(true);
+        window.scrollTo(0, 0);
         const ref = category ? query(productCollection, where('category', '==', category)) : productCollection;
 
         getDocs(ref)

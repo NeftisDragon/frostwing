@@ -17,6 +17,7 @@ function ItemDetailContainer() {
 
     useEffect(() => {
         setLoading(true);
+        window.scrollTo(0, 0);
         const docRef = doc(productCollection, id);
         const query = getDoc(docRef);
 

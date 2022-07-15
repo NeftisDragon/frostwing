@@ -5,7 +5,7 @@ import Form from './Form.jsx';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import { useCartContext } from '../utils/Context.jsx';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from '../utils/firestore.js';
 import { serverTimestamp, collection, addDoc } from 'firebase/firestore';
 
@@ -75,6 +75,10 @@ function Cart() {
     const setFormToggleOff = () => {
         setForm(false);
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     if (cart.length === 0) {
         return (

@@ -16,15 +16,15 @@ The website can be accessed here: https://frostwing.vercel.app
 
 ### Navigation
 
-![Navigation GIF](https://firebasestorage.googleapis.com/v0/b/frostwing-e2279.appspot.com/o/navigation.gif?alt=media&token=47350e39-a3b3-44e2-aca4-6afd98e2f678)
+![Navigation GIF](https://firebasestorage.googleapis.com/v0/b/frostwing-e2279.appspot.com/o/navigation.gif?alt=media&token=006b7d3a-95e9-49f4-9930-860ba9683b90)
 
 ### Managing your Cart
 
-![Cart GIF](https://firebasestorage.googleapis.com/v0/b/frostwing-e2279.appspot.com/o/cart.gif?alt=media&token=830f36ea-65d5-4cb4-9ea6-254db37b8cb3)
+![Cart GIF](https://firebasestorage.googleapis.com/v0/b/frostwing-e2279.appspot.com/o/cart.gif?alt=media&token=745b45ca-3898-4e86-b12d-0fae18b58c7b)
 
 ### Checkout
 
-![Checkout GIF](https://firebasestorage.googleapis.com/v0/b/frostwing-e2279.appspot.com/o/checkout.gif?alt=media&token=e89d1a2e-a28f-485d-b6ca-032332828536)
+![Checkout GIF](https://firebasestorage.googleapis.com/v0/b/frostwing-e2279.appspot.com/o/checkout.gif?alt=media&token=bf6ea530-4e1c-4bcd-9e05-3c382fa9b976)
 * * *
 
 ## Media Credits

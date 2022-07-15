@@ -2,7 +2,7 @@ import '../styles/App.css';
 import { Link } from 'react-router-dom';
 
 function Item({ id, name, overview, category }) {
-    if (category == 'Intel') {
+    if (category === 'Intel') {
         return (
             <div className="item shadow-intel">
                 <p className="item-name">{name}</p>
@@ -13,7 +13,7 @@ function Item({ id, name, overview, category }) {
                 </div>
             </div>
         )
-    } else if (category == 'AMD') {
+    } else if (category === 'AMD') {
         return (
             <div className="item shadow-amd">
                 <p className="item-name">{name}</p>

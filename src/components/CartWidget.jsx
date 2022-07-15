@@ -9,7 +9,7 @@ function CartWidget() {
     return (
         <NavLink to="/cart" className="cart-widget">
             <div className="cart-container">
-                <img className="cart-vector" src={Cart} />
+                <img className="cart-vector" src={Cart} alt="" />
             </div>
             <div className="total-items">
                 <p>{getLength()}</p>

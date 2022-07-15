@@ -79,7 +79,7 @@ function Cart() {
     if (cart.length === 0) {
         return (
             <section className="cart-empty">
-                <img src={emptyCart} />
+                <img src={emptyCart} alt=""/>
                 <h1>Come back once you've picked your CPU!</h1>
             </section>
         )
@@ -116,7 +116,7 @@ function Cart() {
                                 <div className="col col-3">${parseFloat(getSubtotal(item.price, item.quantity)).toFixed(2)}</div>
                                 <div className="col col-4">
                                     <button onClick={() => removeItem(item.id)} className="removeBTN">
-                                        <img src={remove} />
+                                        <img src={remove} alt=""/>
                                     </button>
                                 </div>
                             </li>

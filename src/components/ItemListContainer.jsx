@@ -1,5 +1,5 @@
 import '../styles/App.css';
-import logo from '../logo.svg';
+import logo from '../assets/vectors/logo.svg';
 import ItemList from './ItemList.jsx';
 import ScrollUp from './ScrollUp.jsx';
 import { useEffect, useState } from 'react';

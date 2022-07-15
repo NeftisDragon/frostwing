@@ -1,6 +1,6 @@
 import '../styles/App.css';
 import ItemDetail from './ItemDetail.jsx';
-import logo from '../logo.svg';
+import logo from '../assets/vectors/logo.svg';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { productCollection } from '../utils/firestore.js';

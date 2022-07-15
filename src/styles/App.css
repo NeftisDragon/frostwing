@@ -190,9 +190,16 @@
   display: inline-block;
   margin: 20px;
   background-color: #121212;
-  width: 350px;
-  box-shadow: 5px 5px 15px #61dafb;
+  width: 320px;
   transition: 1s;
+}
+
+.shadow-intel {
+  box-shadow: 5px 5px 15px #066eb8;
+}
+
+.shadow-amd {
+  box-shadow: 5px 5px 15px #ef800b;
 }
 
 .item:hover {
@@ -210,7 +217,7 @@
 }
 
 .item-overview {
-  width: 340px;
+  width: 310px;
 }
 
 .item hr {
@@ -254,17 +261,19 @@
 
 .overview-container {
   background-color: #000;
-  padding: 30px;
+  padding: 15px 30px 30px;
   border-radius: 10px;
   width: 400px;
   box-shadow: 5px 5px 15px #61dafb;
 }
 
-.item-name {
+.item-overview-name {
   color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .detail-overview {
@@ -624,31 +633,31 @@
 
   /**APP**/
   .App-main {
-    padding: 340px 0 120px;
+    padding: 340px 0 60px;
   }
 
   .disclaimer {
     margin: 100px 30px 80px;
-    font-size: 42px;
+    font-size: 34px;
   }
 
   .copyright {
-    font-size: 42px;
+    font-size: 36px;
   }
 
   /**NAVBAR**/
   .mainLogo {
-    width: 320px;
+    width: 280px;
   }
 
   .navigation li {
     margin: 0 60px;
-    font-size: 76px;
+    font-size: 72px;
   }
 
   /**CARTWIDGET**/
   .cart-vector {
-    width: 150px;
+    width: 120px;
   }
 
   .cart-container {
@@ -659,8 +668,8 @@
   .total-items {
     top: 60%;
     padding: 4px;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   .total-items p {
@@ -669,7 +678,7 @@
 
   /**ITEMLISTCONTAINER**/
   .customMessage {
-    padding: 40px 50px;
+    padding: 30px 50px;
   }
 
   .customMessage h1 {
@@ -681,7 +690,7 @@
   }
 
   .loading-screen {
-    margin: 240px 0 260px;
+    margin: 100px 0 340px;
   }
 
   .loading-screen img {
@@ -694,20 +703,16 @@
 
   /**ITEM**/
   .item {
-    margin: 60px;
-    width: 800px;
-  }
-
-  .item:hover {
-    transform: none;
+    margin: 60px 50px;
+    width: 620px;
   }
 
   .item-name {
-    font-size: 76px;
+    font-size: 64px;
   }
 
   .item-overview {
-    width: 780px;
+    width: 600px;
   }
 
   .item hr {
@@ -715,7 +720,7 @@
   }
 
   .item-button {
-    font-size: 72px;
+    font-size: 64px;
     margin: 50px 0 40px;
   }
 
@@ -729,15 +734,15 @@
 
   /**ITEMDETAIL**/
   .detail-container {
-    margin: 100px;
+    margin: 40px;
   }
 
   .overview-container {
     width: 800px;
-    padding: 20px 40px 40px;
+    padding: 15px 40px 40px;
   }
 
-  .item-name {
+  .item-overview-name {
     font-size: 72px;
     margin: 20px 0 30px;
   }
@@ -748,25 +753,29 @@
 
   .description-container {
     padding: 50px;
-    height: 990px;
+    height: 560px;
   }
 
   .detail-description {
-    width: 800px;
-    font-size: 52px;
+    width: 1100px;
+    font-size: 42px;
   }
 
   .detail-price {
     margin: 40px 0;
-    font-size: 82px;
+    font-size: 72px;
   }
 
   .counter-container {
-    width: 800px;
-    padding: 48px;
+    width: 1110px;
+    padding: 30px 40px;
   }
 
   /**ITEMCOUNT**/
+  .view-cart-container {
+    padding: 95px;
+  }
+
   .view-cart {
     font-size: 68px;
     border-radius: 5px;
@@ -793,7 +802,7 @@
 
   /**CART**/
   .cart-empty {
-    margin: 460px;
+    margin: 300px 460px;
   }
 
   .cart-empty img {
@@ -805,7 +814,7 @@
   }
 
   .cart {
-    margin: 100px;
+    margin: 40px 0 100px;
   }
 
   .table {
@@ -817,6 +826,10 @@
     border-radius: 3px;
     padding: 50px 30px;
     margin-bottom: 45px;
+  }
+
+  .table ul li div {
+    font-size: 52px;
   }
 
   .table ul li .removeBTN {
@@ -831,21 +844,17 @@
   .table ul li .clear-cart-btn button {
     border-radius: 10px;
     padding: 30px 60px;
-    font-size: 72px;
+    font-size: 58px;
   }
 
   .table ul li .continue-btn button {
     border-radius: 10px;
     padding: 30px 60px;
-    font-size: 72px;
+    font-size: 58px;
   }
 
   .table ul .table-header {
     letter-spacing: 0.03em;
-  }
-
-  .table ul li div {
-    font-size: 56px;
   }
 
   .table ul .col-1 {
@@ -866,18 +875,18 @@
 
   /**FORM**/
   .formulary {
-    margin: 60px 0 80px;
+    margin: 20px 0 80px;
   }
 
   .formulary form {
     padding: 20px;
     border-radius: 5px;
-    width: 820px;
+    width: 800px;
   }
 
   .formulary form label {
-    margin: 50px 0 30px;
-    font-size: 68px;
+    margin: 40px 0 20px;
+    font-size: 54px;
     border-radius: 5px;
     padding: 15px;
   }
@@ -886,27 +895,28 @@
     width: 760px;
     height: 30px;
     border-radius: 5px;
-    padding: 40px 30px;
-    font-size: 58px;
+    padding: 30px 20px;
+    font-size: 46px;
   }
 
   .checkout-btn {
     margin: 65px;
-    padding: 30px 50px;
+    padding: 20px 50px;
     border-radius: 10px;
-    font-size: 72px;
+    font-size: 58px;
   }
 
   .return-btn {
-    margin: 0px 0 -20px;
+    margin: 0px 0 -10px;
     padding: 20px 50px;
     border-radius: 2px;
-    font-size: 72px;
+    font-size: 58px;
   }
 
   /**SCROLLUP**/
   .scrollUp {
     width: 200px;
+    top: 85%;
   }
 }
 
@@ -914,7 +924,7 @@
 
   /**APP**/
   .App-main {
-    padding: 260px 0 80px;
+    padding: 240px 0 80px;
   }
 
   .disclaimer {
@@ -928,17 +938,17 @@
 
   /**NAVBAR**/
   .mainLogo {
-    width: 240px;
+    width: 200px;
   }
 
   .navigation li {
     margin: 0 50px;
-    font-size: 58px;
+    font-size: 56px;
   }
 
   /**CARTWIDGET**/
   .cart-vector {
-    width: 110px;
+    width: 90px;
   }
 
   .cart-container {
@@ -992,12 +1002,12 @@
   }
 
   .overview-container {
-    padding: 30px;
+    padding: 20px 30px 30px;
     border-radius: 10px;
     width: 500px;
   }
 
-  .item-name {
+  .item-overview-name {
     font-size: 42px;
   }
 
@@ -1013,11 +1023,11 @@
     background-color: #121212;
     padding: 30px;
     border-radius: 10px;
-    height: 500px;
+    height: 338.4px;
   }
 
   .detail-description {
-    width: 500px;
+    width: 680px;
     text-align: left;
     font-size: 24px;
   }
@@ -1028,8 +1038,12 @@
   }
 
   .counter-container {
-    width: 500px;
-    padding: 0 30px;
+    width: 680px;
+    padding: 10px 30px;
+  }
+
+  .view-cart-container {
+    padding: 50px;
   }
 
   .view-cart {
@@ -1221,10 +1235,10 @@
   /**ITEMDETAIL**/
   .overview-container {
     width: 300px;
-    padding: 20px 20px 20px;
+    padding: 12px 20px 20px;
   }
 
-  .item-name {
+  .item-overview-name {
     font-size: 28px;
   }
 
@@ -1427,8 +1441,8 @@
     border-radius: 5px;
   }
 
-  .item-name {
-    font-size: 18px !important;
+  .item-overview-name {
+    font-size: 24px;
   }
 
   .detail-overview {
@@ -1530,7 +1544,7 @@
   }
 
   .table ul .col-4 {
-    flex-basis: 8%;
+    flex-basis: 10%;
   }
 
   /**FORM**/
@@ -1621,8 +1635,8 @@
     padding: 10px 20px 20px;
   }
 
-  .item-name {
-    font-size: 18px !important;
+  .item-overview-name {
+    font-size: 18px;
   }
 
   .detail-overview {
@@ -1775,6 +1789,7 @@
   /**NAVBAR**/
   .mainLogo {
     width: 75px;
+    margin-left: 10px;
   }
 
   .navigation li {
@@ -1825,6 +1840,10 @@
     padding: 5px 10px 10px;
   }
 
+  .item-overview-name {
+    margin-bottom: 5px;
+  }
+
   .detail-overview {
     width: 200px;
   }
@@ -1858,7 +1877,7 @@
   }
 
   .table ul li {
-    padding: 20px 30px;
+    padding: 20px 20px;
   }
 
   .table ul li div {
@@ -1867,6 +1886,7 @@
 
   .table ul li .removeBTN {
     padding: 5px;
+    border-radius: 3px;
   }
 
   .table ul li .removeBTN img {
@@ -1897,6 +1917,524 @@
   }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
 
-@media (max-width: 320px) {}
+  /**APP**/
+  .App-main {
+    padding: 75px 0 20px;
+  }
+
+  .disclaimer {
+    margin: 15px 30px 20px;
+    font-size: 6px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+
+  /**NAVBAR**/
+  .mainLogo {
+    width: 55px;
+    margin: 3 0 0 10px;
+  }
+
+  .navigation li {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  /**CARTWIDGET**/
+  .cart-vector {
+    width: 25px;
+  }
+
+  .cart-container {
+    padding: 3px;
+  }
+
+  .total-items {
+    top: 60%;
+    padding: 4px;
+    width: 7px;
+    height: 7px;
+  }
+
+  .total-items p {
+    font-size: 8px;
+  }
+
+  /**ITEMLISTCONTAINER**/
+  .customMessage {
+    border-radius: 5px;
+    padding: 6px 10px;
+  }
+
+  .customMessage h1 {
+    font-size: 18px;
+  }
+
+  .ItemListContainer {
+    margin: 5px 0px;
+  }
+
+  .loading-screen {
+    margin: 10px 0 140px;
+  }
+
+  .loading-screen img {
+    width: 160px;
+  }
+
+  .loading-screen p {
+    font-size: 20px;
+  }
+
+  /**ITEM**/
+  .item {
+    margin: 3.2px;
+    width: 120px;
+    border-radius: 3px;
+    padding: 6px;
+  }
+
+  .shadow-intel {
+    box-shadow: none;
+    border: 0.1px solid;
+    border-color: #066eb8;
+  }
+
+  .shadow-amd {
+    box-shadow: none;
+    border: 0.1px solid;
+    border-color: #ef800b;
+  }
+
+  .item-name {
+    font-size: 12px;
+  }
+
+  .item-overview {
+    width: 115px;
+  }
+
+  .item hr {
+    margin: 8px 0 0;
+  }
+
+  .item-button {
+    font-size: 10px;
+    margin: 10px 0 4px;
+    padding: 5px 13px;
+    border-radius: 3px;
+  }
+
+  /**ITEMDETAIL**/
+  .detail-container {
+    flex-flow: column;
+    margin: 0px 30px 20px;
+  }
+
+  .detail-container div {
+    margin: 8px;
+  }
+
+  .overview-container {
+    margin: 8px;
+    width: 220px;
+    padding: 8px 10px 10px;
+  }
+
+  .detail-overview {
+    width: 220px;
+  }
+
+  .description-container {
+    padding: 15px;
+    height: 220px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .detail-description {
+    width: 210px;
+    font-size: 12px;
+  }
+
+  .counter-container {
+    width: 220px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  /**ITEMCOUNT**/
+  .q-selection button {
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .q-selection p {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+
+  .q-confirmation button {
+    margin-top: 0;
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  .view-cart-container {
+    padding: 23.5px;
+  }
+
+  .view-cart {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 12px;
+  }
+
+  /**CART**/
+  .cart-empty {
+    margin: 60px 0 190px;
+  }
+
+  .cart-empty img {
+    width: 80px;
+  }
+
+  .cart-empty h1 {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .cart {
+    margin: 5px;
+  }
+
+  .table {
+    width: 280px;
+  }
+
+  .table ul li {
+    padding: 15px 10px;
+    margin-bottom: 8px;
+  }
+
+  .table ul li div {
+    font-size: 10px;
+  }
+
+  .table ul li .removeBTN {
+    padding: 4px;
+  }
+
+  .table ul li .removeBTN img {
+    width: 8px;
+  }
+
+  .table ul li .clear-cart-btn button {
+    padding: 6px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .table ul li .continue-btn button {
+    padding: 6px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .table ul .col-1 {
+    flex-basis: 35%;
+  }
+
+  .table ul .col-2 {
+    flex-basis: 25%;
+  }
+
+  .table ul .col-3 {
+    flex-basis: 20%;
+  }
+
+  .table ul .col-4 {
+    flex-basis: 10%;
+  }
+
+  /**FORM**/
+  .formulary {
+    margin: 0;
+  }
+
+  .formulary form label {
+    margin: 12px 0 8px;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .formulary form input {
+    width: 240px;
+    height: 30px;
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+
+  .checkout-btn {
+    margin: 25px 0 10px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .return-btn {
+    margin: 0 0 -20px;
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+
+  /**SCROLLUP**/
+  .scrollUp {
+    width: 40px;
+    top: 92%;
+  }
+}
+
+@media (max-width: 320px) {
+
+  /**APP**/
+  .App-main {
+    padding: 65px 0 20px;
+  }
+
+  .disclaimer {
+    margin: 15px 30px 20px;
+    font-size: 6px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+
+  /**NAVBAR**/
+  .mainLogo {
+    width: 50px;
+    margin: 3px 0 0 10px;
+  }
+
+  .navigation li {
+    margin: 0 6px;
+    font-size: 12px;
+  }
+
+  /**CARTWIDGET**/
+  .cart-vector {
+    width: 20px;
+  }
+
+  .cart-container {
+    padding: 3px;
+  }
+
+  .total-items {
+    top: 60%;
+    padding: 4px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .total-items p {
+    font-size: 6px;
+  }
+
+  /**ITEMLISTCONTAINER**/
+  .customMessage {
+    border-radius: 5px;
+    padding: 6px 10px;
+  }
+
+  .customMessage h1 {
+    font-size: 16px;
+  }
+
+  .ItemListContainer {
+    margin: 0;
+  }
+
+  .loading-screen {
+    margin: 50px 0 100px;
+  }
+
+  .loading-screen img {
+    width: 140px;
+  }
+
+  .loading-screen p {
+    font-size: 20px;
+  }
+
+  /**ITEM**/
+  .item {
+    margin: 4px;
+    width: 90px;
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 6px;
+  }
+
+  .item-name {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .item-overview {
+    width: 85px;
+  }
+
+  .item hr {
+    margin: 3px 0 0;
+  }
+
+  .item-button {
+    font-size: 8px;
+    margin: 8px 0 2px;
+    padding: 3px 13px;
+    border-radius: 2px;
+  }
+
+  /**ITEMDETAIL**/
+  .detail-container {
+    margin: 0px 30px 20px;
+  }
+
+  .detail-container div {
+    margin: 5px;
+  }
+
+  .overview-container {
+    margin: 8px;
+    width: 180px;
+    padding: 8px 10px 10px;
+    box-shadow: 3px 3px 10px #61dafb;
+  }
+
+  .detail-overview {
+    width: 180px;
+  }
+
+  .description-container {
+    padding: 10px;
+    height: 240px;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .detail-description {
+    width: 180px;
+    font-size: 12px;
+  }
+
+  .counter-container {
+    width: 180px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  /**ITEMCOUNT**/
+  .q-selection button {
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .q-selection p {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+
+  .q-confirmation button {
+    margin-top: 0;
+    font-size: 14px;
+    padding: 5px 12px;
+  }
+
+  .view-cart-container {
+    padding: 20.5px;
+  }
+
+  .view-cart {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px 12px;
+  }
+
+  /**CART**/
+  .cart-empty {
+    margin: 60px 0 190px;
+  }
+
+  .cart-empty img {
+    width: 70px;
+  }
+
+  .cart-empty h1 {
+    margin: 0;
+    font-size: 11px;
+  }
+
+  .cart {
+    margin: 0px 0 15px;
+  }
+
+  .table {
+    width: 260px;
+  }
+
+  .table ul li {
+    padding: 10px 10px;
+    margin-bottom: 6.8px;
+  }
+
+  .table ul li div {
+    font-size: 8px;
+  }
+
+  .table ul li .removeBTN {
+    padding: 4px;
+  }
+
+  .table ul li .removeBTN img {
+    width: 7px;
+  }
+
+  .table ul li .clear-cart-btn button {
+    padding: 6px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .table ul li .continue-btn button {
+    padding: 6px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  /**FORM**/
+  .formulary form label {
+    margin: 12px 0 8px;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .formulary form input {
+    width: 220px;
+    height: 30px;
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  /**SCROLLUP**/
+  .scrollUp {
+    width: 40px;
+    top: 90%;
+  }
+}

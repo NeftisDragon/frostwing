@@ -25,7 +25,7 @@ function ItemDetail({ item }) {
     return (
         <section className="detail-container">
             <div className="overview-container">
-                <p className="item-name">{item.name}</p>
+                <p className="item-overview-name">{item.name}</p>
                 <img src={item.overview} alt="product-overview" className="detail-overview" />
             </div>
             <div className="description">

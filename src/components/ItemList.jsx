@@ -9,6 +9,7 @@ function ItemList({ products }) {
                 overview={p.overview}
                 price={p.price}
                 stock={p.stock}
+                category={p.category}
                 key={p.id}
             />
         )

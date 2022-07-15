@@ -1,11 +1,17 @@
 import '../styles/App.css';
 import logo from '../assets/images/FrostWing_logo.png';
 import CartWidget from './CartWidget';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 import { Link, NavLink } from 'react-router-dom';
 
 function NavBar() {
+    const MySwal = withReactContent(Swal);
+
     const soon = () => {
-        alert("Coming soon!");
+        MySwal.fire({
+            title: <p>Coming soon!</p>
+        })
     }
 
     return (

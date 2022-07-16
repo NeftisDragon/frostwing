@@ -26,7 +26,7 @@ function ItemCount({ stock, counter, setCounter, onAdd }) {
                 <button onClick={increaseCounter} className="increase-counter">&#43;</button>
             </div>
             <div className="q-confirmation">
-                <button onClick={success}>CONFIRM</button>
+                {!counter ? <button disabled={true} className="disabled">CONFIRM</button> : <button onClick={success} disabled={false}>CONFIRM</button>}
             </div>
         </section>
     )

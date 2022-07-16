@@ -416,6 +416,10 @@
   background-color: #bdc0c1;
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 /**CART**/
 .cart-empty {
   display: flex;

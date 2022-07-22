@@ -151,14 +151,19 @@
 
 /**ITEMLISTCONTAINER**/
 .customMessage {
-  background-color: #606060;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 15px;
-  transition: 0.5s;
+  display: flex;
+  justify-content: center;
 }
 
-.customMessage h1 {
+.customMessage div {
+  background-color: #606060;
+  border-radius: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+.customMessage div h1 {
   font-family: 'Roboto';
   font-size: 48px;
 }
@@ -681,11 +686,11 @@
   }
 
   /**ITEMLISTCONTAINER**/
-  .customMessage {
+  .customMessage div {
     padding: 30px 50px;
   }
 
-  .customMessage h1 {
+  .customMessage div h1 {
     font-size: 82px;
   }
 
@@ -972,11 +977,11 @@
   }
 
   /**ITEMLISTCONTAINER**/
-  .customMessage {
+  .customMessage div {
     padding: 20px 30px;
   }
 
-  .customMessage h1 {
+  .customMessage div h1 {
     font-size: 52px;
   }
 
@@ -1384,7 +1389,7 @@
   }
 
   /**ITEMLISTCONTAINER**/
-  .customMessage h1 {
+  .customMessage div h1 {
     font-size: 36px;
   }
 
@@ -1605,7 +1610,7 @@
   }
 
   /**ITEMLISTCONTAINER**/
-  .customMessage h1 {
+  .customMessage div h1 {
     font-size: 28px;
   }
 
@@ -1822,7 +1827,7 @@
   }
 
   /**ITEMLISTCONTAINER**/
-  .customMessage h1 {
+  .customMessage div h1 {
     font-size: 24px;
   }
 
@@ -1969,12 +1974,12 @@
   }
 
   /**ITEMLISTCONTAINER**/
-  .customMessage {
+  .customMessage div {
     border-radius: 5px;
     padding: 6px 10px;
   }
 
-  .customMessage h1 {
+  .customMessage div h1 {
     font-size: 18px;
   }
 
@@ -2252,12 +2257,12 @@
   }
 
   /**ITEMLISTCONTAINER**/
-  .customMessage {
+  .customMessage div {
     border-radius: 5px;
     padding: 6px 10px;
   }
 
-  .customMessage h1 {
+  .customMessage div h1 {
     font-size: 16px;
   }
 

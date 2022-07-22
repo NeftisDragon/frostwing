@@ -32,9 +32,9 @@ function ItemDetailContainer() {
     }, [])
 
     return (
-        <>
+        <section>
             {loading ? <div className="loading-screen"><img src={logo} className="logo" alt="logo" /><p>Loading...</p></div> : <ItemDetail item={product} />}
-        </>
+        </section>
     )
 }
 

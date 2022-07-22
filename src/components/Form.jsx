@@ -5,7 +5,7 @@ function Form({ handleChange, data, handleSubmit }) {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
     return (
         <form onSubmit={handleSubmit}>

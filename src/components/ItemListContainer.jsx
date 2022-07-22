@@ -38,15 +38,17 @@ function ItemListContainer() {
     }, [category])
 
     return (
-        <>
+        <section>
             <section id="top" className="customMessage">
-                <h1>Find your CPU</h1>
+                <div>
+                    <h1>Find your CPU</h1>
+                </div>
             </section>
             <section className="ItemListContainer">
                 {loading ? <div className="loading-screen"><img src={logo} className="logo" alt="logo" /><p>Loading...</p></div> : <ItemList products={items} />}
                 <ScrollUp />
             </section>
-        </>
+        </section>
     )
 }
 
